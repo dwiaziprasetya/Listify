@@ -1,4 +1,4 @@
-package com.example.listify.ui.theme
+package com.example.listify.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

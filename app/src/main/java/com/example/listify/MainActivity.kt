@@ -11,6 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
 import com.example.listify.presentation.theme.ListifyTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,17 +20,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ListifyTheme(dynamicColor = false) {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .background(MaterialTheme.colorScheme.background)
-                ){
-                    Text(
-                        text = "Listify App",
-                        color = MaterialTheme.colorScheme.onPrimary,
-                        modifier = Modifier.align(Alignment.Center)
-                    )
-                }
+                ListifyApp(navController = rememberNavController())
             }
         }
     }

@@ -64,7 +64,6 @@ fun WelcomeScreen() {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .padding(horizontal = 16.dp)
-                .navigationBarsPadding()
                 .align(Alignment.BottomCenter)
         ) {
             HorizontalPager(
